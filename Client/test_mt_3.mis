@@ -1,0 +1,11 @@
+VAR $mystr1,STRING,100,"Prog_3_String_1"
+VAR $mystr2,STRING,100,"Prog_3_String_2"
+VAR $mystr3,STRING,100,"Prog_3_String_3"
+VAR $mystr4,STRING,100,"Prog_3_String_4"
+OUT $mystr1
+SLEEP 1
+OUT $mystr2
+SLEEP 9
+OUT $mystr3
+SLEEP 14
+OUT $mystr4

@@ -1,0 +1,9 @@
+src = Add.cpp Sub.cpp Div.cpp Mult.cpp Assign.cpp  ../Type_Classes/Numeric.cpp ../Type_Classes/Real.cpp ../Type_Classes/String.cpp ../Type_Classes/Char.cpp  TestKeyword.cpp ../Exceptions_Draft/ArithmeticException.cpp
+
+all: Operations
+
+Operations: ${src}
+	g++  ${src} -o Operations
+
+clean:
+	rm -f Operations

@@ -1,0 +1,9 @@
+src = Numeric.cpp Char.cpp Real.cpp String.cpp TestTypeKeywords.cpp
+
+all: KeywordTest
+
+KeywordTest: ${src}
+	g++  ${src} -o KeywordTest
+
+clean:
+	rm -f KeywordTest

@@ -1,0 +1,10 @@
+VAR $myint,REAL,100.0
+VAR $myint1,REAL,200
+VAR $myint2,REAL,300
+OUT $myint
+SLEEP 6
+ADD $myint,100,$myint2
+MUL $myint,100,200
+OUT $myint
+ASSIGN $myint,$myint2
+OUT $myint

@@ -1,0 +1,3 @@
+/opt/rh/devtoolset-4/root/usr/libexec/gcc/x86_64-redhat-linux/5.2.1/ld: cannot open output file MIS: Is a directory
+collect2: error: ld returned 1 exit status
+make: *** [Parser] Error 1

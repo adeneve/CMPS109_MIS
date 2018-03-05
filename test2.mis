@@ -1,0 +1,12 @@
+VAR $mychar1,CHAR,a
+VAR $mychar2,CHAR,f
+VAR $mychar3,CHAR,Q
+ASSIGN $mychar1,$mychar2
+OUT $mychar1,$mychar2
+VAR $mystr1,STRING,100,”Hello world MIS!!!”
+VAR $mystr2,STRING,100,"UR A STRING"
+OUT $mystr1
+VAR $myint1,NUMERIC,1
+SET_STR_CHAR $mystr1,1,$mychar3
+GET_STR_CHAR $mystr1,1,$mychar1
+OUT $mychar1,$mychar2

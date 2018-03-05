@@ -1,0 +1,37 @@
+THREAD_BEGIN
+VAR $myint1,REAL,200
+VAR $myint2,REAL,300
+VAR $myint3,REAL,400
+LOCK $otherint
+OUT $myint2
+
+
+UNLOCK $otherint
+
+
+THREAD_END
+
+
+THREAD_BEGIN
+VAR $otherint,REAL,600
+VAR $otherint2,REAL,300
+ADD $otherint,$otherint,$otherint2
+OUT $otherint
+
+THREAD_END
+
+VAR $hello,REAL,3
+
+THREAD_BEGIN
+VAR $otherint1,NUMERIC,6
+VAR $otherint21,REAL,5
+SUB $otherint1,$otherint1,$otherint21
+OUT $otherint1
+
+THREAD_END
+
+SLEEP 5
+OUT $otherint21
+
+
+BARRIER

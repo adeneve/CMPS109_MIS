@@ -1,0 +1,9 @@
+SRC = ../Type_Classes/Numeric.cpp ../Type_Classes/Real.cpp ../Type_Classes/String.cpp ../Type_Classes/Char.cpp Sleep.cpp SleepTest.cpp
+
+all: SleepTest
+
+SleepTest: ${SRC}
+	g++ -std=gnu++14 ${SRC} -o SleepTest
+
+clean:
+	rm -f SleepTest
